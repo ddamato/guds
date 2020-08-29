@@ -21,7 +21,15 @@
     "start": "nps",
     "test": "nps test"
   },
-  "stories": ["../src/**/*.stories.@(js|mdx)"],
+  "stories": [
+    "../src/**/*.stories.@(js|mdx)"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.[tj]sx?$": "babel-jest",
+      "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
+    }
+  },
   "bugs": {
     "url": "https://github.com/ddamato/guds/issues"
   },
@@ -40,6 +48,7 @@
     "@storybook/addon-jest": "^6.0.20",
     "@storybook/addon-storyshots": "^6.0.20",
     "babel-loader": "^8.1.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "react-test-renderer": "^16.13.1"
   }
 }

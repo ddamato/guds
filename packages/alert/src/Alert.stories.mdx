@@ -9,7 +9,11 @@ With `MDX` we can define a story for `Alert` right in the middle of our
 Markdown documentation.
 
 <Canvas>
-  <Story name="Default" args={{ children: 'Hello World' }}>
+  <Story 
+    name="Default"
+    args={{ children: 'Hello World' }}
+    parameters={{ jest: ['alert.test.js'] }}
+    >
     { args => <Alert { ...args } /> }
   </Story>
 </Canvas>
