@@ -1,4 +1,7 @@
+const { stories } = require('../package.json');
+const { addons } = require('../../../.storybook/main.js');
+
 module.exports = {
-  stories: ['../src/**/*.stories.@(js|mdx)'],
-  addons: ['@storybook/addon-essentials']
+  stories,
+  addons
 }
