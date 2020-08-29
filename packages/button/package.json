@@ -1,0 +1,41 @@
+{
+  "name": "button",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Donnie D'Amato <fauxserious@gmail.com>",
+  "homepage": "https://github.com/ddamato/guds/tree/master/packages/button#readme",
+  "license": "ISC",
+  "main": "lib/button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddamato/guds.git"
+  },
+  "scripts": {
+    "build": "babel src — out-dir lib",
+    "storybook": "start-storybook -p 9001",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ddamato/guds/issues"
+  },
+  "dependencies": {
+    "@storybook/react": "^6.0.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "@storybook/addon-essentials": "^6.0.20"
+  }
+}
