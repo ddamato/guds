@@ -1,13 +1,6 @@
 import React from 'react';
-import { configure, shallow } from 'enzyme';
+import { wrap } from '../../../test-suite.js';
 import Button from '../src';
-
-import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
-
-function wrap(component) {
-  return shallow(shallow(component).get(0));
-}
 
 describe('button', () => {
   it("renders correctly", () => {

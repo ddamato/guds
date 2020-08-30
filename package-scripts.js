@@ -6,7 +6,7 @@ module.exports = {
       default: 'babel src — out-dir lib',
     },
     refresh: {
-      default: 'lerna bootstrap --hoist',
+      default: 'lerna clean -y && lerna bootstrap --hoist',
     },
     storybook: {
       build: 'build-storybook -o ./_site',
