@@ -1,1 +1,1 @@
-require('../../../.storybook/preview.js');
+import '../../../.storybook/preview.js';

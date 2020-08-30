@@ -9,7 +9,10 @@ With `MDX` we can define a story for `Button` right in the middle of our
 Markdown documentation.
 
 <Canvas>
-  <Story name="Default" args={{ children: 'Hello World' }}>
-    { args => <Button { ...args } /> }
+  <Story
+    name="Default"
+    args={{ children: 'Hello World' }}
+    parameters={{ jest: ['button.test.js'] }}>
+      { args => <Button { ...args } /> }
   </Story>
 </Canvas>

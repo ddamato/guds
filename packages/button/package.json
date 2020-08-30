@@ -26,24 +26,5 @@
   ],
   "bugs": {
     "url": "https://github.com/ddamato/guds/issues"
-  },
-  "dependencies": {
-    "@storybook/react": "^6.0.20",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "@storybook/addon-a11y": "^6.0.20",
-    "@storybook/addon-docs": "^6.0.20",
-    "@storybook/addon-essentials": "^6.0.20",
-    "@storybook/addon-jest": "^6.0.20",
-    "@storybook/addon-storyshots": "^6.0.20",
-    "babel-loader": "^8.1.0",
-    "jest": "^26.4.2",
-    "react-test-renderer": "^16.13.1"
   }
 }

@@ -1,3 +1,5 @@
+const path = require('path');
+const jestOutput = path.resolve(__dirname, '.jest-test-results.json');
 module.exports = {
   scripts: {
     build: {
@@ -12,7 +14,7 @@ module.exports = {
     },
     test: {
       default: 'jest',
-      generate: 'nps test --json --outputFile=.jest-test-results.json',
+      generate: `jest --json --outputFile=${jestOutput}`,
       watch: 'nps test.generate -- --watch'
     }
   }
