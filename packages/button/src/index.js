@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Alert = ({ children }) => {
-  return <div className='alert'>{ children }</div>;
+const Button = ({ children }) => {
+  return <div className='button'>{ children }</div>;
 }
 
-export default Alert;
+export default Button;

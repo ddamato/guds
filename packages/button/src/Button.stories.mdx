@@ -1,7 +1,8 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { withDesign } from 'storybook-addon-designs'
 import Button from './index.js';
 
-<Meta title="Design System/Button" component={Button} />
+<Meta title="Design System/Button" component={Button} decorators={[withDesign]} />
 
 # Button
 
@@ -12,7 +13,13 @@ Markdown documentation.
   <Story
     name="Default"
     args={{ children: 'Hello World' }}
-    parameters={{ jest: ['button.test.js'] }}>
+    parameters={{
+      jest: ['button.test.js'],
+      design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
+      },
+    }}>
       { args => <Button { ...args } /> }
   </Story>
 </Canvas>
