@@ -1,7 +1,7 @@
 const { stories } = require('../package.json');
-const { addons } = require('~root/.storybook/main.js');
+const main = require('~root/.storybook/main.js');
 
 module.exports = {
+  ...main,
   stories,
-  addons
 }
