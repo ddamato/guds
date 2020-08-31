@@ -10,7 +10,7 @@ module.exports = {
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
-      test: /\.js$/,
+      test: /styles\.js$/,
       exclude: /node_modules/,
       use: [
         { loader: 'babel-loader' },

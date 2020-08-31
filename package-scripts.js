@@ -10,6 +10,9 @@ module.exports = {
       lerna: 'lerna clean -y && lerna bootstrap --hoist',
       alias: 'command -v link-module-alias && link-module-alias clean || true && link-module-alias'
     },
+    reset:  {
+      default: 'rm -rf node_modules && npm i'
+    },
     storybook: {
       rimraf: 'rm -rf _site',
       build: 'nps storybook.rimraf && build-storybook -s -p --quiet -o ./_site',

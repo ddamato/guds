@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { withDesign } from 'storybook-addon-designs'
 import Alert from './index.js';
 
@@ -11,8 +11,8 @@ Markdown documentation.
 
 <Canvas>
   <Story
-    name="Default"
-    args={{ children: 'Hello Alert', design: 'warning' }}
+    name='Default'
+    args={{ children: 'Default Alert' }}
     parameters={{
       jest: ['alert.test.js'],
       design: {
@@ -23,3 +23,40 @@ Markdown documentation.
       { args => <Alert { ...args } /> }
   </Story>
 </Canvas>
+
+<ArgsTable story='Default'/>
+
+<Canvas>
+  <Story
+    name='Critical'
+    args={{ children: 'Critical Alert', design: 'critical' }}
+    parameters={{
+      jest: ['alert.test.js'],
+      design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
+      },
+    }}>
+      { args => <Alert { ...args } /> }
+  </Story>
+</Canvas>
+
+<ArgsTable story='Critical'/>
+
+<Canvas>
+  <Story
+    name='Warning'
+    args={{ children: 'Warning Alert', design: 'warning' }}
+    parameters={{
+      jest: ['alert.test.js'],
+      design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
+      },
+    }}>
+      { args => <Alert { ...args } /> }
+  </Story>
+</Canvas>
+
+<ArgsTable story='Warning'/>
+
