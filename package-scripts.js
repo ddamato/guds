@@ -11,7 +11,8 @@ module.exports = {
       alias: 'command -v link-module-alias && link-module-alias clean || true && link-module-alias'
     },
     storybook: {
-      build: 'build-storybook -o ./_site',
+      rimraf: 'rm -rf _site',
+      build: 'nps storybook.rimraf && build-storybook -s -p --quiet -o ./_site',
       default: 'start-storybook -p 9001'
     },
     test: {
