@@ -1,9 +1,10 @@
-'use strict';
-
-const alert = require('..');
+import React from 'react';
+import { wrap } from '~root/test-suite.js';
+import Alert from '../src';
 
 describe('alert', () => {
-    it('needs tests', () => {
-        expect(2 + 2).toBe(4);
-    });
+  it("renders correctly", () => {
+    const wrapper = wrap(<Alert>Hello World!</Alert>);
+    expect(wrapper.contains('Hello World!')).toEqual(true);
+  });
 });

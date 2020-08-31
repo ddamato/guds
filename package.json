@@ -6,7 +6,10 @@
   "scripts": {
     "start": "nps",
     "test": "nps test",
-    "postinstall": "lerna bootstrap --hoist"
+    "postinstall": "lerna bootstrap --hoist && link-module-alias"
+  },
+  "_moduleAliases": {
+    "~root": "."
   },
   "stories": [
     "../packages/*/!(node_modules)/**/*.stories.@(js|mdx)"
@@ -41,6 +44,7 @@
     "jest": "^26.4.2",
     "jest-esm-transformer": "^1.0.0",
     "lerna": "^3.22.1",
+    "link-module-alias": "^1.2.0",
     "nps": "^5.10.0",
     "puppeteer": "^5.2.1",
     "react": "^16.13.1",

@@ -1,25 +1,25 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { withDesign } from 'storybook-addon-designs'
-import Button from './index.js';
+import Alert from './index.js';
 
-<Meta title="Design System/Button" component={Button} decorators={[withDesign]} />
+<Meta title="Design System/Alert" component={Alert} decorators={[withDesign]} />
 
-# Button
+# Alert
 
-With `MDX` we can define a story for `Button` right in the middle of our
+With `MDX` we can define a story for `Alert` right in the middle of our
 Markdown documentation.
 
 <Canvas>
   <Story
     name="Default"
-    args={{ children: 'Hello Button' }}
+    args={{ children: 'Hello Alert' }}
     parameters={{
-      jest: ['button.test.js'],
+      jest: ['alert.test.js'],
       design: {
         type: 'figma',
         url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
       },
     }}>
-      { args => <Button { ...args } /> }
+      { args => <Alert { ...args } /> }
   </Story>
 </Canvas>

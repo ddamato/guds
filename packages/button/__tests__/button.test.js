@@ -1,5 +1,5 @@
 import React from 'react';
-import { wrap } from '../../../test-suite.js';
+import { wrap } from '~root/test-suite.js';
 import Button from '../src';
 
 describe('button', () => {
