@@ -15,8 +15,9 @@ module.exports = {
       default: 'start-storybook -p 9001'
     },
     test: {
-      default: 'jest',
+      default: `jest`,
       generate: `jest --json --outputFile=${jestOutput}`,
+      update: 'jest -u',
       watch: 'nps test.generate -- --watch'
     }
   }

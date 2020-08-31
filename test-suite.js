@@ -7,6 +7,13 @@ const staticStorybookPath = path.join(__dirname, '_site');
 import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
+jest.mock('linaria', () => {
+  return {
+    css: jest.fn(() => ''),
+    cx: jest.fn(() => ''),
+  }
+})
+
 export function wrap(component) {
   return shallow(shallow(component).get(0));
 }

@@ -8,7 +8,7 @@ module.exports = {
     '@storybook/addon-jest',
     'storybook-addon-designs',
   ],
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.js$/,
       exclude: /node_modules/,
