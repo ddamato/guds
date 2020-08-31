@@ -1,5 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import { withDesign } from 'storybook-addon-designs'
+import { withDesign } from 'storybook-addon-designs';
+import guidelines from './guidelines.md';
 import Button from './index.js';
 
 <Meta title="Design System/Button" component={Button} decorators={[withDesign]} />
@@ -19,6 +20,7 @@ Markdown documentation.
         type: 'figma',
         url: 'https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File',
       },
+      notes: { guidelines }
     }}>
       { args => <Button { ...args } /> }
   </Story>

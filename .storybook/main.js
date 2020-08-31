@@ -6,6 +6,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-jest',
+    '@storybook/addon-notes/register',
     'storybook-addon-designs',
   ],
   webpackFinal: async (config) => {
