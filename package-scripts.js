@@ -1,4 +1,5 @@
 const path = require('path');
+process.env.root = __dirname;
 const jestOutput = path.resolve(__dirname, '.jest-test-results.json');
 module.exports = {
   scripts: {
@@ -6,9 +7,8 @@ module.exports = {
       default: 'babel src — out-dir lib',
     },
     refresh: {
-      default: 'nps refresh.lerna && nps refresh.alias',
+      default: 'nps refresh.lerna',
       lerna: 'lerna clean -y && lerna bootstrap --hoist',
-      alias: 'command -v link-module-alias && link-module-alias clean || true && link-module-alias'
     },
     reset:  {
       default: 'rm -rf node_modules && npm i'
@@ -16,7 +16,7 @@ module.exports = {
     storybook: {
       rimraf: 'rm -rf _site',
       build: 'nps storybook.rimraf && build-storybook -s -p --quiet -o ./_site',
-      default: 'start-storybook -p 9001'
+      default: `start-storybook -p 9001`,
     },
     test: {
       default: `jest`,

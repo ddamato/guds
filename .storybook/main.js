@@ -1,7 +1,12 @@
-const { stories } = require('../package.json');
+const fs = require('fs');
+const path = require('path');
+
+const glob = fs.existsSync(path.resolve(__dirname, '..', 'packages'))
+  ? '../packages/**/src/canvas.stories.mdx'
+  : '../src/canvas.stories.mdx';
 
 module.exports = {
-  stories,
+  stories: [glob],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',

@@ -1,4 +1,7 @@
 module.exports = {
+  moduleNameMapper: {
+    "~root(.*)$": "<rootDir>/$1",
+  },
   transform: {
     "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx",
     "\\.m?jsx?$": "jest-esm-transformer",

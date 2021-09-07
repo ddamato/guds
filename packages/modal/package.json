@@ -1,11 +1,11 @@
 {
-  "name": "alert",
+  "name": "modal",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Donnie D'Amato <fauxserious@gmail.com>",
-  "homepage": "https://github.com/ddamato/guds/tree/master/packages/alert#readme",
+  "homepage": "https://github.com/ddamato/guds/tree/master/packages/modal#readme",
   "license": "ISC",
-  "main": "lib/alert.js",
+  "main": "lib/modal.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

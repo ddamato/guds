@@ -1,5 +1,5 @@
 const { stories } = require('../package.json');
-const main = require(`${process.env.root}/.storybook/main.js`);
+const main = require('~root/.storybook/main.js');
 
 module.exports = {
   ...main,

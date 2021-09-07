@@ -1,1 +1,1 @@
-module.exports = require('~root/babel.config.js');
+module.exports = require(`${process.env.root}/jest.config.js`);

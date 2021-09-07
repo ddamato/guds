@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = alert;
+module.exports = button;
 
-function alert() {
+function button() {
     // TODO
 }

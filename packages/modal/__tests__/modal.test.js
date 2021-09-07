@@ -1,10 +1,10 @@
 import React from 'react';
-import Alert from '../src';
+import Modal from '../src';
 const { wrap } = require(`${process.env.root}/test-suite.js`);
 
-describe('alert', () => {
+describe('modal', () => {
   it("renders correctly", () => {
-    const wrapper = wrap(<Alert>Hello World!</Alert>);
+    const wrapper = wrap(<Modal>Hello World!</Modal>);
     expect(wrapper.contains('Hello World!')).toEqual(true);
   });
 });

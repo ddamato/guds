@@ -21,9 +21,6 @@
     "start": "nps",
     "test": "nps test"
   },
-  "stories": [
-    "../src/**/*.stories.@(js|mdx)"
-  ],
   "bugs": {
     "url": "https://github.com/ddamato/guds/issues"
   }
