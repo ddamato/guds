@@ -16,7 +16,7 @@ module.exports = {
     storybook: {
       rimraf: 'rm -rf _site',
       build: 'nps storybook.rimraf && build-storybook -s -p --quiet -o ./_site',
-      default: `concurrently "start-storybook -p 9001" "nps test.watch"`,
+      default: `concurrently "start-storybook -p 9001 --quiet" "nps test.watch"`,
     },
     test: {
       default: `jest`,

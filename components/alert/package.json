@@ -6,7 +6,6 @@
   "homepage": "https://github.com/ddamato/guds/tree/master/packages/alert#readme",
   "license": "ISC",
   "main": "lib/alert.js",
-  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"

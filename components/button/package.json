@@ -6,7 +6,6 @@
   "homepage": "https://github.com/ddamato/guds/tree/master/packages/button#readme",
   "license": "ISC",
   "main": "lib/button.js",
-  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"

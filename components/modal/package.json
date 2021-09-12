@@ -6,7 +6,6 @@
   "homepage": "https://github.com/ddamato/guds/tree/master/packages/modal#readme",
   "license": "ISC",
   "main": "lib/modal.js",
-  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"
