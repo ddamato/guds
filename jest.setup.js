@@ -15,26 +15,19 @@ jest.mock('linaria', () => {
 });
 
 jest.mock('prop-types', () => {
-  return {
-    css: jest.fn(() => ''),
-    cx: jest.fn(() => ''),
-  }
-});
-
-jest.mock('prop-types', () => {
   const RealPropTypes = jest.requireActual('prop-types');
   const mockPropTypes = jest.requireActual('mock-prop-types');
  
   return mockPropTypes(RealPropTypes);
 });
 
-export function wrap(component) {
+export function mount(component) {
   return shallow(shallow(component).get(0));
 }
 
-initStoryshots({
-  framework: 'react',
-  test: imageSnapshot({
-    storybookUrl: `file://${staticStorybookPath}`
-  })
-});
+// initStoryshots({
+//   framework: 'react',
+//   test: imageSnapshot({
+//     storybookUrl: `file://${staticStorybookPath}`
+//   })
+// });

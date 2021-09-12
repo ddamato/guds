@@ -1,14 +1,15 @@
 {
-  "name": "modal",
+  "name": "button",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Donnie D'Amato <fauxserious@gmail.com>",
-  "homepage": "https://github.com/ddamato/guds/tree/master/packages/modal#readme",
+  "homepage": "https://github.com/ddamato/guds/tree/master/packages/button#readme",
   "license": "ISC",
-  "main": "lib/modal.js",
+  "main": "lib/button.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "test"
   },
   "files": [
     "lib"

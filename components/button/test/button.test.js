@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from '../src';
-const { wrap } = require(`${process.env.root}/test-suite.js`);
+const { mount } = require(`${process.env.root}/jest.setup.js`);
 
 describe('button', () => {
   it("renders correctly", () => {
-    const wrapper = wrap(<Button>Hello World!</Button>);
+    const wrapper = mount(<Button>Hello World!</Button>);
     expect(wrapper.contains('Hello World!')).toEqual(true);
   });
 });

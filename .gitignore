@@ -1,4 +1,5 @@
 .DS_Store
+.jest-test-results.json
 node_modules
 .linaria-cache/
 **/lib

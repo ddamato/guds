@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const glob = fs.existsSync(path.resolve(__dirname, '..', 'packages'))
-  ? '../packages/**/src/canvas.stories.mdx'
+const glob = fs.existsSync(path.resolve(__dirname, '..', 'components'))
+  ? '../components/**/src/canvas.stories.mdx'
   : '../src/canvas.stories.mdx';
 
 module.exports = {
