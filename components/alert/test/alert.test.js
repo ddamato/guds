@@ -2,9 +2,11 @@ import React from 'react';
 import Alert from '../src';
 const { mount } = require(`${process.env.root}/jest.setup.js`);
 
-describe('alert', () => {
-  it("renders correctly", () => {
-    const wrapper = mount(<Alert>Hello World!</Alert>);
-    expect(wrapper.contains('Hello World!')).toEqual(true);
+describe('<Alert/>', function () {
+
+  it("renders correctly", function () {
+    const component = mount(<Alert>Hello World!</Alert>);
+    expect(component.contains('Hello World!')).toEqual(true);
   });
+
 });
